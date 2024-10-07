@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 42%);
+  --black-gray: hsl(0, 0%, 7%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--yellow);
+  font-size: 14px;
+  font-family: 'figtree', 'sans-serif';
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--white);
+  max-width: 320px;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+
+  box-shadow: 10px 10px;
+  border: 1px solid var(--black-gray);
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.category {
+  background-color: var(--yellow);
+
+  max-width: fit-content;
+  padding: 4px 12px;
+
+  font-weight: 900;
+}
+
+.date {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.category,
+.date,
+.title {
+  margin-bottom: 12px;
+}
+
+.content {
+  margin: 24px 0;
+}
+
+.title {
+  font-size: 1.3rem;
+}
+
+.desc {
+  color: var(--light-gray);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 10%;
+  margin-right: 12px;
+}
+
+.category,
+.title,
+.profile p {
+  color: var(--black-gray);
+  font-weight: 800;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
